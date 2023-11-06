@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear/Editar Producto - Tienda Isabella</title>
+    <link rel="stylesheet" href="form-products.css"> <!-- Enlaza tu archivo CSS aquí -->
+</head>
+<body>
+    <header>
+        <h1>Crear/Editar Producto</h1>
+        <nav>
+            <ul>
+                <li><a href="admin-panel.html">Volver al Panel de Productos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="formulario-producto">
+            <form action="guardar_producto.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="categoria">Categoría:</label>
+                <input type="text" id="categoria" name="categoria">
+                
+                <label for="precio">Precio:</label>
+                <input type="number" id="precio" name="precio" step="0.01" required>
+                
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion"></textarea>
+                
+                <div class="acciones">
+                    <button type="submit" class="boton-guardar">Guardar</button>
+                    <button type="reset" class="boton-cancelar">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

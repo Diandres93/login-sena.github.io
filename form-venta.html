@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form-venta.css">
+    <title>Crear/Editar Venta - Tienda Isabella</title>
+</head>
+<body>
+    <header>
+        <h1>Crear/Editar Venta - Tienda Isabella</h1>
+        <nav>
+            <ul>
+                <li><a href="admin-panel.html">Productos</a></li>
+                <li><a href="admin-clientes.html">Clientes</a></li>
+                <li><a href="admin-ventas.html">Ventas</a></li>
+                <li><a href="index.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="venta-form">
+            <h2>Formulario de Venta</h2>
+            <form action="guardar_venta.php" method="post">
+                <label for="numero_venta">Número de Venta:</label>
+                <input type="text" id="numero_venta" name="numero_venta" required>
+                
+                <label for="fecha_venta">Fecha de Venta:</label>
+                <input type="date" id="fecha_venta" name="fecha_venta" required>
+                
+                <label for="cliente">Cliente:</label>
+                <select id="cliente" name="cliente">
+                    <option value="cliente1">Cliente 1</option>
+                    <option value="cliente2">Cliente 2</option>
+                    <!-- Agrega más opciones de clientes aquí -->
+                </select>
+                
+                <label for="total">Total:</label>
+                <input type="number" id="total" name="total" step="0.01" required>
+                
+                <label for="productos">Productos en la Venta:</label>
+                <select id="productos" name="productos" multiple>
+                    <option value="producto1">Producto 1 - $19.99</option>
+                    <option value="producto2">Producto 2 - $24.99</option>
+                    <option value="producto3">Producto 3 - $29.99</option>
+                    <!-- Agrega más opciones de productos aquí -->
+                </select>
+                
+                <div class="acciones">
+                    <button type="submit" class="boton-guardar">Guardar</button>
+                    <button type="reset" class="boton-cancelar">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
