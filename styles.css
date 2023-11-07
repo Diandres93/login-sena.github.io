@@ -1,4 +1,4 @@
-body {
+/*body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
   margin: 0;
@@ -49,20 +49,108 @@ button {
 button:hover {
   background-color: #0056b3;
 }
-
+*/
 
 /* Estilos para pantallas pequeñas (hasta 768px) */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .login-container {
       width: 80%;
       max-width: 400px;
   }
-}
+}*/
 
 /* Estilos para pantallas medianas (768px - 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
+/*@media (min-width: 769px) and (max-width: 1024px) {
   .login-container {
       width: 50%;
       max-width: 500px;
   }
+}*/
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* Cambio de color de fondo */
 }
+
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 20vh; /* Alinea el contenedor verticalmente */
+}
+
+h1 {
+  font-size: 24px;
+  color: #0077b6; /* Color de título personalizado */
+}
+
+/* Estilos del formulario de inicio de sesión */
+form {
+  text-align: left;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #0077b6; /* Cambio de color de borde en foco */
+}
+
+button {
+  background-color: #0077b6;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #005d8e; /* Cambio de color al pasar el cursor */
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 600px) {
+  .login-container {
+      max-width: 100%;
+      margin: 0;
+      border-radius: 0;
+  }
+  .login-container, h1 {
+      margin-top: 10vh;
+  }
+}
+
+
